@@ -8,3 +8,7 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+
+# Keep Shopify Skia native C++ libraries safe
+-keep class com.shopify.reactnative.skia.** { *; }
+-keepclasseswithmembers class com.shopify.reactnative.skia.** { *; }
